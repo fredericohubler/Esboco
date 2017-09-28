@@ -27,4 +27,14 @@ public class Conta {
     public ArrayList<CartaoCredito> getListaCartoes() {
         return listaCartoes;
     }
+
+    public void removeCartaoCredito(String numero){
+        for(int i=0;i>listaCartoes.size();i++){
+            if (listaCartoes.get(i).getNumeroCartao()==Integer.parseInt(numero)){
+                listaCartoes.remove(i);
+                return;
+            }
+        }
+        System.out.println("Cartão nao encontrado.");
+    }
 }

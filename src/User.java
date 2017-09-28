@@ -20,4 +20,6 @@ public class User {
     public ArrayList<Conta> getContas() {
         return contas;
     }
+
+
 }

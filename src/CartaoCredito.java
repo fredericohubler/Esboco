@@ -15,4 +15,8 @@ public class CartaoCredito {
     public String resumo(){
         return "Numero do Cartão: "+numeroCartao+"\nValidade: "+validade+"\nDia da Fatura: "+diaFatura+"\nBandeira: "+bandeira+"\nSaldo: "+saldo+"\nLimite: "+limite;
     }
+
+    public int getNumeroCartao() {
+        return numeroCartao;
+    }
 }
